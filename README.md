@@ -17,21 +17,21 @@ The main goal is to classify transactions accurately as either authentic or frau
 While making online purchases, regularly monitor account statements for any suspicious transactions and report them to the bank immediately.<br>
 **Manual System:** Slow, clunky manual reviews choke banks' efficiency, leading to costly chargebacks, frustrated customers, and missed legitimate transactions. This reactive approach leaves everyone vulnerable.
 
-### Credit card fraud and its impact:
+### Credit Card Fraud and Its Impact:
 **Financial Protection:**  With an increasing need to detect fraudulent transactions, machine learning models play a crucial role. Understanding model selection, tuning, and handling class imbalances are essential skills for data scientists.
 Banks cann utilize machine learning algorithms to analyze transaction patterns, flagging unusual activities and preventing potential fraud. Protect profits, safeguard customers, and thrive in the age of digital payments.<br>
 **Preserving Trust:** Detection models play a crucial role in preserving trust between customers and banks. By promptly identifying and addressing fraudulent activities, banks demonstrate their commitment to security, ensuring customers feel secure in their financial transactions.<br>
 **Operational Efficiency:** Implementing a robust fraud detection model enhances operational efficiency by automating the identification process. For example, a machine learning model can analyze vast datasets more rapidly than manual reviews, minimizing the time and resources required to detect fraudulent transactions.<br>
 **Regulatory Compliance:** Financial institutions must comply with regulations and standards to ensure a secure and trustworthy banking environment. A credit card fraud detection model helps banks adhere to these requirements, avoiding legal issues and reputational damage. For instance, if a bank fails to detect and prevent fraudulent activities, it may face regulatory penalties and lose customer trust.
 
-### Common method of credit card fraud:
+### Common Method of Credit Card Fraud:
 Magnetic Mimicry: Skimming steals card data for shady swaps.<br>
 Counterfeit Cabal: Fake cards join the plastic party, uninvited.<br>
 Lost & Found Lies: Stolen cards fuel fraudulent feasts.<br>
 Telephonic Trickery: Sweet-talking scammers swipe cash by extracting information.<br>
 Others: Tampered cards & Identity theft play a deceitful game.
 
-### Steps of this project
+### Steps of this Project:
 **1.**	Perform Exploratory Data Analysis (EDA) for an initial overview of the dataset, focusing on feature distribution, class imbalances, and overall data characteristics. <br>
 **2.**	Conduct Data Preprocessing, addressing missing values, and applying normalization or standardization to prepare data for model training.<br>
 **3.**	Train various fraud detection models, including XGB Classifier, Light GBM Classifier, Gradient Boosting Classifier, Ada Boost Classifier, Random Forest Classifier, Logistic Regression, Support Vector Machine (SVM), Decision Tree Classifier, Hist Gradient Boosting Classifier.<br>
@@ -46,27 +46,28 @@ Others: Tampered cards & Identity theft play a deceitful game.
 Most of the fraudulent transactions appear to have occurred between the time intervals of 9 hours to 28 hours after a certain event, with another cluster observed between 36 hours and 46 hours thereafter. <br>
 These time frames suggest potential patterns or anomalies in the timing of fraudulent activities, which could be further investigated for insights into the nature of the fraudulent behavior or to enhance fraud detection algorithms.
 
-### Distribution of numerical attributes
+### Distribution of Numerical Attributes
 
 ![Credit Card Fraud detection](https://github.com/Sadikctg/Project_2_Credit_Card_Fraud_Detection/blob/main/images_ccfd/1.2%20Distribution%20of%20numerical%20attributes.png)
 
 Many variables exhibit outliers, as evidenced by the presence of skewness in the data distribution. To address this issue, we filter the DataFrame based on outlier detection techniques, such as the interquartile range (IQR) method or z-score method, to remove or mitigate the impact of outliers on the analysis and modeling process.
 
 
-### Comparison of models with scale in Orjinal Data
+### Comparison of Models Using Original Data Scaling
 
 ![Credit Card Fraud detection](https://github.com/Sadikctg/Project_2_Credit_Card_Fraud_Detection/blob/main/images_ccfd/1.3%20Comparison%20of%20models%20with%20scale%20in%20Orjinal%20Data.JPG)
 #### Top 2 model based on Recall score, F1 score and Precision score: XGB Classifier, Random Forest Classifier.<br>
 The comparative analysis reveals that XGB Classifier and Random Forest Classifier outperform other models in terms of accuracy, recall, F1 score, and precision, showcasing robust performance on both test and train data. Conversely, Ada Boost Classifier, SVM, Logistic Regression, and Decision Tree Classifier exhibit slightly lower recall and F1 scores, indicating potential issues with correctly identifying positive cases. Hist Gradient Boosting Classifier, Light GBM Classifier, and Gradient Boosting Classifier demonstrate suboptimal performance, especially in recall and precision, suggesting the need for further optimization or exploration of alternative models. To enhance overall model performance, focusing on hyperparameter tuning for boosting algorithms like XGB and Random Forest, and considering ensemble techniques could be beneficial. Additionally, addressing class imbalance and exploring feature engineering may improve the performance of models with lower recall and precision.
 
-### Comparison of the models with scaling in df_filter
+### Comparison of Models Using df_filter Data Scaling
+
 ![Credit Card Fraud detection](https://github.com/Sadikctg/Project_2_Credit_Card_Fraud_Detection/blob/main/images_ccfd/1.4%20%20Comparison%20of%20the%20models%20with%20scaling%20in%20df_filter.JPG)
 
 #### Top 2 model based on Recall score, F1 score and Precision score: XGB Classifier, Random Forest Classifier.<br>
 This results depict enhanced performance across various classifiers compared to the previous outcomes. Notably, Random Forest, AdaBoost, and Gradient Boosting classifiers exhibit improved accuracy, recall, F1, and precision scores, suggesting better fraud detection capabilities. <br>
 Conversely, while SVM and Logistic Regression maintain high accuracy, their recall, F1, and precision scores demonstrate slight declines, implying potential challenges in correctly identifying fraudulent transactions. The decision to employ Random Forest, AdaBoost, or Gradient Boosting classifiers could be advantageous for accurate fraud detection, considering their balanced performance metrics.
 
-### Comparison of the models with scaling in df_filter with Smote and Scale
+### Comparison of Models with Scaling in df_filter with Smote and Scale
 
 ![Credit Card Fraud detection](https://github.com/Sadikctg/Project_2_Credit_Card_Fraud_Detection/blob/main/images_ccfd/1.5%20Comparison%20of%20the%20models%20with%20scaling%20in%20df_filter%20with%20Smote%20and%20Scale.JPG)
 
@@ -74,7 +75,7 @@ Conversely, while SVM and Logistic Regression maintain high accuracy, their reca
 SMOTE adjustments in model performance show consistent or slightly improved accuracy, recall, precision, and F1 scores across most classifiers compared to the previous results. Specifically, classifiers like Hist Gradient Boosting, XGB, Light GBM, and Random Forest demonstrate robust performance with high scores across all metrics, indicating their effectiveness in accurately detecting fraudulent transactions. <br>
 However, classifiers like Gradient Boosting, Ada Boost, and SVM exhibit slightly lower scores but still maintain reasonable performance levels. Notably, Logistic Regression shows a decline in performance compared to the previous results, suggesting potential areas for further optimization or exploration of alternative methods.
 
-### Comparison of the models with scaling in df_filter using ADASYN
+### Comparison of the Models with Scaling in df_filter Using ADASYN
 
 ![Credit Card Fraud detection](https://github.com/Sadikctg/Project_2_Credit_Card_Fraud_Detection/blob/main/images_ccfd/1.6%20Comparison%20of%20the%20models%20with%20scaling%20in%20df_filter%20using%20ADASYN.JPG)
 
