@@ -40,7 +40,7 @@ Others: Tampered cards & Identity theft play a deceitful game.
 
 ### Distribution of Time for Normal & Fraudulent Transactions
 
-![Credit Card Fraud detection](https://github.com/Sadikctg/Project_2_Credit_Card_Fraud_Detection/blob/main/images_file/1.1%20Distribution%20of%20Time%20for%20normal%20and%20Fraudulent%20Transactions.png).
+![Time for Normal & Fraudulent Transactions](https://github.com/Sadikctg/Project_2_Credit_Card_Fraud_Detection/blob/main/images_file/1.1%20Distribution%20of%20Time%20for%20normal%20and%20Fraudulent%20Transactions.png). <br>
 
 ** This complete transactions occurs over a two-day period.**
 Most of the fraudulent transactions appear to have occurred between the time intervals of 9 hours to 28 hours after a certain event, with another cluster observed between 36 hours and 46 hours thereafter. <br>
