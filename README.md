@@ -82,3 +82,9 @@ However, classifiers like Gradient Boosting, Ada Boost, and SVM exhibit slightly
 #### Top 2 model based on Recall score, F1 score and Precision score: XGB Classifier, Random Forest Classifier. <br>
 ADASYN showcase marginal to moderate shifts in model performance metrics compared to the previous iteration. Models like Hist Gradient Boosting, Light GBM, XGB, and RandomForest retain their high accuracy and recall scores, indicating consistent fraud detection capabilities. <br>
 Notably, SVM demonstrates a slight decrease in accuracy and recall, suggesting potential areas for optimization or alternative model selection. Similarly, Logistic Regression exhibits a noticeable decline in all metrics, highlighting the need for revisiting feature engineering or considering more sophisticated algorithms. 
+
+### Summary & Conclusion:
+- **ML Models:** XGB Classifier, Random Forest Classifier, SVC, Decision Tree Classifier, Light GBM Classifier, Gradient Boosting Classifier, Ada Boost Classifier, Logistic Regression, Hist Gradient Boosting Classifier.
+- **Oversampling Techniques:** SMOTE, ADASYN.
+- **Scalers & Transforms:** RobustScaler, PowerTransformer.
+- Using a threshold of 0.5 and SMOTE, XGB and Random Forest classifier models stand out as the top performers (ROC-AUC scores of approximately 99.99%, recall and F1-score 100%), showcasing outstanding predictive accuracy and robustness.
