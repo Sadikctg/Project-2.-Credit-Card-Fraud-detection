@@ -40,7 +40,7 @@ Others: Tampered cards & Identity theft play a deceitful game.
 
 ### Distribution of Time for Normal & Fraudulent Transactions
 
-![Time for Normal & Fraudulent Transactions](https://github.com/Sadikctg/Project_2_Credit_Card_Fraud_Detection/blob/main/images_ccfd/1.01%20Distribution%20of%20Time%20for%20normal%20and%20Fraudulent%20Transactions.png). <br>
+![Time for Normal & Fraudulent Transactions](https://github.com/Sadikctg/Project_2_Credit_Card_Fraud_Detection/blob/main/images_ccfd/1.01%20Distribution%20of%20Time%20for%20normal%20and%20Fraudulent%20Transactions.png).
 
 **This complete transactions occurs over a two-day period.**
 Most of the fraudulent transactions appear to have occurred between the time intervals of 9 hours to 28 hours after a certain event, with another cluster observed between 36 hours and 46 hours thereafter. <br>
@@ -53,3 +53,32 @@ Many variables exhibit outliers, as evidenced by the presence of skewness in the
 
 
 ### Comparison of models with scale in Orjinal Data
+
+![Credit Card Fraud detection](https://github.com/Sadikctg/Project_2_Credit_Card_Fraud_Detection/blob/main/images_ccfd/1.3%20Comparison%20of%20models%20with%20scale%20in%20Orjinal%20Data.JPG).
+Top 2 model based on Recall score, F1 score and Precision score: XGB Classifier, Random Forest Classifier.<br>
+
+The comparative analysis reveals that XGB Classifier and Random Forest Classifier outperform other models in terms of accuracy, recall, F1 score, and precision, showcasing robust performance on both test and train data. Conversely, Ada Boost Classifier, SVM, Logistic Regression, and Decision Tree Classifier exhibit slightly lower recall and F1 scores, indicating potential issues with correctly identifying positive cases. Hist Gradient Boosting Classifier, Light GBM Classifier, and Gradient Boosting Classifier demonstrate suboptimal performance, especially in recall and precision, suggesting the need for further optimization or exploration of alternative models. To enhance overall model performance, focusing on hyperparameter tuning for boosting algorithms like XGB and Random Forest, and considering ensemble techniques could be beneficial. Additionally, addressing class imbalance and exploring feature engineering may improve the performance of models with lower recall and precision.
+
+### Comparison of the models with scaling in df_filter
+![Credit Card Fraud detection](https://github.com/Sadikctg/Project_2_Credit_Card_Fraud_Detection/blob/main/images_ccfd/1.4%20%20Comparison%20of%20the%20models%20with%20scaling%20in%20df_filter.JPG).
+
+Top 2 model based on Recall score, F1 score and Precision score: XGB Classifier, Random Forest Classifier
+This results depict enhanced performance across various classifiers compared to the previous outcomes. Notably, Random Forest, AdaBoost, and Gradient Boosting classifiers exhibit improved accuracy, recall, F1, and precision scores, suggesting better fraud detection capabilities. <br>
+Conversely, while SVM and Logistic Regression maintain high accuracy, their recall, F1, and precision scores demonstrate slight declines, implying potential challenges in correctly identifying fraudulent transactions. The decision to employ Random Forest, AdaBoost, or Gradient Boosting classifiers could be advantageous for accurate fraud detection, considering their balanced performance metrics.
+
+
+### Comparison of the models with scaling in df_filter with Smote and Scale
+
+![Credit Card Fraud detection](https://github.com/Sadikctg/Project_2_Credit_Card_Fraud_Detection/blob/main/images_ccfd/1.5%20Comparison%20of%20the%20models%20with%20scaling%20in%20df_filter%20with%20Smote%20and%20Scale.JPG).
+
+Top 2 model based on Recall score, F1 score and Precision score: XGB Classifier, Random Forest Classifier. <br>
+SMOTE adjustments in model performance show consistent or slightly improved accuracy, recall, precision, and F1 scores across most classifiers compared to the previous results. Specifically, classifiers like Hist Gradient Boosting, XGB, Light GBM, and Random Forest demonstrate robust performance with high scores across all metrics, indicating their effectiveness in accurately detecting fraudulent transactions. <br>
+However, classifiers like Gradient Boosting, Ada Boost, and SVM exhibit slightly lower scores but still maintain reasonable performance levels. Notably, Logistic Regression shows a decline in performance compared to the previous results, suggesting potential areas for further optimization or exploration of alternative methods.
+
+### Comparison of the models with scaling in df_filter using ADASYN
+
+![Credit Card Fraud detection](https://github.com/Sadikctg/Project_2_Credit_Card_Fraud_Detection/blob/main/images_ccfd/1.6%20Comparison%20of%20the%20models%20with%20scaling%20in%20df_filter%20using%20ADASYN.JPG).
+
+Top 2 model based on Recall score, F1 score and Precision score: XGB Classifier, Random Forest Classifier. <br>
+ADASYN showcase marginal to moderate shifts in model performance metrics compared to the previous iteration. Models like Hist Gradient Boosting, Light GBM, XGB, and RandomForest retain their high accuracy and recall scores, indicating consistent fraud detection capabilities. <br>
+Notably, SVM demonstrates a slight decrease in accuracy and recall, suggesting potential areas for optimization or alternative model selection. Similarly, Logistic Regression exhibits a noticeable decline in all metrics, highlighting the need for revisiting feature engineering or considering more sophisticated algorithms. 
