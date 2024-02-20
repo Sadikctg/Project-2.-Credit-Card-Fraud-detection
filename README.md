@@ -46,6 +46,10 @@ Others: Tampered cards & Identity theft play a deceitful game.
 Most of the fraudulent transactions appear to have occurred between the time intervals of 9 hours to 28 hours after a certain event, with another cluster observed between 36 hours and 46 hours thereafter. <br>
 These time frames suggest potential patterns or anomalies in the timing of fraudulent activities, which could be further investigated for insights into the nature of the fraudulent behavior or to enhance fraud detection algorithms.
 
-### Distribution of Time for Normal & Fraudulent Transactions
+### Distribution of numerical attributes
 
 ![Credit Card Fraud detection](https://github.com/Sadikctg/Project_2_Credit_Card_Fraud_Detection/blob/main/images_file/1.1%20Distribution%20of%20Time%20for%20normal%20and%20Fraudulent%20Transactions.png).
+Many variables exhibit outliers, as evidenced by the presence of skewness in the data distribution. To address this issue, we filter the DataFrame based on outlier detection techniques, such as the interquartile range (IQR) method or z-score method, to remove or mitigate the impact of outliers on the analysis and modeling process.
+
+
+### Comparison of models with scale in Orjinal Data
