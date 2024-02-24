@@ -1,5 +1,5 @@
 ### Credit Card Fraud Detection (Summarized)
-![Credit Card Fraud detection](https://github.com/Sadikctg/Project_2_Credit_Card_Fraud_Detection/blob/main/images_file/frauddetection.jpg)
+![Credit Card Fraud detection](https://github.com/Sadikctg/Project_2_Credit_Card_Fraud_Detection/blob/main/images_ccfd/frauddetection.jpg)
 ### Objectives
 In this project, the aim is to utilize machine learning models to predict occurrences of fraudulent credit card transactions.<br>
 **1. Detecting Fraudulent Transactions**<br>
